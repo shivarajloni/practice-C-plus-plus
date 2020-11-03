@@ -1,5 +1,6 @@
 #include<iostream>
-// #include<math.h>
+
+using namespace std;
 
 int linearSearch(int arr[], int n, int key) {
     for(int i=0; i<n; i++) {
@@ -15,12 +16,12 @@ int main() {
     cin >> n;
 
     int arr[n];
-    for(int i=0; i<n; i++) {
+    for(int i=0; i<n; i++){
         cin >> arr[i];
     }
 
     int key;
-    cin >>key;
+    cin >> key;
 
     cout<<linearSearch(arr,n,key)<<endl;
 
