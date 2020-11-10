@@ -1,18 +1,27 @@
 #include<iostream>
-
+            // O(n):  for sorted array
 using namespace std;
 
 bool pairsum(int arr[], int n, int k)
 {
-    for(int i=0; i<n; i++) {
-        for(int j=i+1; j<n; j++) {
-            if(arr[i]+arr[j]==k) {
-                cout<<i<<" "<<j<<endl;
-                return true;
-            }
-        }
-    }
-    return false;
+    int low=0;
+    int high=n-1;
+
+   while (low<high)
+   {
+       if(arr[low]+arr[high]==k) {
+           cout<<low<<" "<<high<<endl;
+           return true;
+       }
+       else if (arr[low] +arr[high]>k) {
+            high--;      
+       } else {
+           low++;
+       }
+   }
+   return false;
+   
+        
 }
 
 int main() {
