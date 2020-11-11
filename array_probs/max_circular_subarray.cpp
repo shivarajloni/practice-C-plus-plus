@@ -23,12 +23,9 @@ int main() {
     for(int i=0; i<n; i++) {
         cin >> arr[i];
     }
-
     int wrapsum;
     int nonwrapsum;
-
     nonwrapsum = kadane(arr, n);
-
     int totalsum=0;
     for(int i=0; i<n; i++) {
         totalsum += arr[i];
