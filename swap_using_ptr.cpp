@@ -18,7 +18,7 @@ int main() {
     int *bptr=&b;
 
     swap(aptr, bptr);
-
+    // swap(&a, &b)            // using call by reference 
    // swap(a,b);              // using pass by value
     cout<<a<<" "<<b<<endl;
 
