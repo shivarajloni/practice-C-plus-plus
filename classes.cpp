@@ -35,3 +35,4 @@ int main()
 	cout << "Area : " << area << endl;
 	return 0;
 }
+
