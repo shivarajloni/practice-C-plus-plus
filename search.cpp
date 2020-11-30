@@ -1,19 +1,15 @@
 #include<iostream>
-
 using namespace std;
 
-int firstoccr(int arr[], int n, int i, int key) {
-    
+int firstoccr(int arr[], int n, int i, int key) {    
     if(i==n) {
         return -1;
     }
-    
     if(arr[i]==key) {
         return i;
     }
     return firstoccr(arr, n, i+1, key);
 }
-
 int lastoccr(int arr[], int n, int i, int key) {
     if(i==n) {
         return -1;
